@@ -23728,40 +23728,6 @@
                 head: '<base href="${baseURL}" target="_blank"/>',
                 body: "${html}"
             }),
-            _render: function(t) {
-                if ((0,
-                        n.logRenderLabel)(this.dataSource.getUniqueId(), n.BlockRenderSteps.RtbBlockRenderStart),
-                        this._isInPage())
-                    this.renderInPage(t);
-                else {
-                    this._createTemplate();
-                    var e = y.dom.querySelector(".yap-rtb__iframe", t)[0];
-                    (0,
-                        n.logRenderLabel)(this.dataSource.getUniqueId(), n.BlockRenderSteps.RtbBlockCreateWrapper),
-                        this._renderAd(e),
-                        (0,
-                            n.logRenderLabel)(this.dataSource.getUniqueId(), n.BlockRenderSteps.RtbBlockRenderAd),
-                        this._afterRender(e),
-                        (0,
-                            n.logRenderLabel)(this.dataSource.getUniqueId(), n.BlockRenderSteps.RtbBlockAfterRender)
-                }
-            },
-            _createTemplate: function() {
-                var t = this.dataSource.getHtml();
-                this._createWrapper(!t || this._isAlternativeCode && !(0,
-                    r.isTurboPage)(window) ? v.RtbIframe.TAG : "")
-            },
-            _renderAd: function(t) {
-                var e = this.dataSource.getHtml();
-                e && this._isAlternativeCode && !(0,
-                    r.isTurboPage)(window) ? this._renderAlternativeCode(t) : e ? this._renderSafeframe(t) : this._renderFromUrl(t)
-            },
-            _afterRender: function(t) {
-                this._initAdtune(),
-                this._confirmByHandler || this._createVisibilityConfirmation(t),
-                    this._createVisibilityChecker(t),
-                    this._visibilityManager.sendWinNotice()
-            },
             _renderFromUrl: function(t) {
                 var e = {}
                     , i = this.dataSource.getUrl()
