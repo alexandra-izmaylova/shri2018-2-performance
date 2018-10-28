@@ -23658,48 +23658,6 @@
                 }),
                     this._innerComponents = []
             },
-            _initAdtune: function() {
-                if (Boolean(this.dataSource.getAbuseUrl()) && !this.dataSource.isApp()) {
-                    var t = y.dom.querySelector(".yap-rtb__adtune-button", this._container)[0];
-                    if (t) {
-                        var e = new k({
-                            class: "yap-rtb__adtune",
-                            language: this.dataSource.getLanguage(),
-                            isOldIE: !1,
-                            mod: "_round",
-                            size: this._isAdtuneBig() ? "L" : "M"
-                        });
-                        I.renderToNode(t, e),
-                            e.on("click:adtune", this._onClickAdtune, this),
-                            this._innerComponents.push(e),
-                            this._adtuneComponent = e
-                    }
-                }
-            },
-            _onClickAdtune: function() {
-                this._feedbackComponent ? this._feedbackComponent.isVisible() ? (this._feedbackComponent.hide(),
-                    this._adtuneComponent.enableTooltip()) : (this._feedbackComponent.show(),
-                    this._adtuneComponent.disableTooltip()) : (this._initFeedbackMenu(),
-                    this._feedbackComponent.show(),
-                    this._adtuneComponent.disableTooltip())
-            },
-            _initFeedbackMenu: function() {
-                var t = y.dom.querySelector(".yap-rtb__wrapper", this._container)[0]
-                    , e = new C({
-                    class: "yap-rtb__feedback",
-                    language: this.dataSource.getLanguage(),
-                    abuseUrl: this.dataSource.getAbuseUrl(),
-                    onReceivedFeedback: y.bind(this._onReceivedFeedback, this)
-                });
-                t.appendChild(I.render(e)),
-                    e.fitSize(),
-                    this._innerComponents.push(e),
-                    this._feedbackComponent = e
-            },
-            _onReceivedFeedback: function(t) {
-                this._adtuneComponent.destroy(),
-                    this.dataSource.abuseAd(t)
-            },
             _appendStyles: function(t) {
                 var e = g.reset
                     , i = g.rtb
