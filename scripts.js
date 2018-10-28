@@ -713,18 +713,18 @@
                 })
             }
             ,
-            e.isPageIgnored = function(t) {
-                var i = void 0 === t ? {} : t
-                    , n = i.pageId
-                    , o = i.list
-                    , r = void 0 === o ? e.pageIdList : o
-                    , a = i.include
-                    , s = void 0 === a ? [] : a
-                    , l = i.exclude
-                    , p = void 0 === l ? [] : l;
-                return (c.includes(r, n) || c.includes(s, n)) && !c.includes(p, n)
-            }
-            ,
+            // e.isPageIgnored = function(t) {
+            //     var i = void 0 === t ? {} : t
+            //         , n = i.pageId
+            //         , o = i.list
+            //         , r = void 0 === o ? e.pageIdList : o
+            //         , a = i.include
+            //         , s = void 0 === a ? [] : a
+            //         , l = i.exclude
+            //         , p = void 0 === l ? [] : l;
+            //     return (c.includes(r, n) || c.includes(s, n)) && !c.includes(p, n)
+            // }
+            // ,
             e.isBlockIgnored = function(t) {
                 var i = void 0 === t ? {} : t
                     , n = i.blockId
@@ -737,17 +737,17 @@
                 return (c.includes(r, n) || c.includes(s, n)) && !c.includes(p, n)
             }
     }
-    , function(t, e, i) {
-        "use strict";
-        e.__esModule = !0,
-            e.indexOf = function(t, e, i) {
-                void 0 === i && (i = 0);
-                for (var n = i; n < t.length; n++)
-                    if (t[n] === e)
-                        return n;
-                return -1
-            }
-    }
+    // , function(t, e, i) {
+    //     "use strict";
+    //     e.__esModule = !0,
+    //         e.indexOf = function(t, e, i) {
+    //             void 0 === i && (i = 0);
+    //             for (var n = i; n < t.length; n++)
+    //                 if (t[n] === e)
+    //                     return n;
+    //             return -1
+    //         }
+    // }
     , function(t, e, i) {
         "use strict";
         e.__esModule = !0;
