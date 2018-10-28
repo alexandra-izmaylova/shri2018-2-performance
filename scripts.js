@@ -1,4 +1,104 @@
-([function(t, e, i) {
+!function(t) {
+    var e = window["pcodeJsonp6187"];
+    window["pcodeJsonp6187"] = function(i, o, r) {
+        for (var a, s, l = 0, p = []; l < i.length; l++)
+            s = i[l],
+            n[s] && p.push(n[s][0]),
+                n[s] = 0;
+        for (a in o)
+            Object.prototype.hasOwnProperty.call(o, a) && (t[a] = o[a]);
+        for (e && e(i, o, r); p.length; )
+            p.shift()()
+    }
+    ;
+    var i = {}
+        , n = {
+        2: 0
+    };
+    function o(e) {
+        if (i[e])
+            return i[e].exports;
+        var n = i[e] = {
+            i: e,
+            l: !1,
+            exports: {}
+        };
+        return t[e].call(n.exports, n, n.exports, o),
+            n.l = !0,
+            n.exports
+    }
+    o.e = function(t) {
+        var e = n[t];
+        if (0 === e)
+            return new Promise(function(t) {
+                    t()
+                }
+            );
+        if (e)
+            return e[2];
+        var i = new Promise(function(i, o) {
+                e = n[t] = [i, o]
+            }
+        );
+        e[2] = i;
+        var r = document.getElementsByTagName("head")[0]
+            , a = document.createElement("script");
+        a.type = "text/javascript",
+            a.charset = "utf-8",
+            a.async = !0,
+            a.timeout = 12e4,
+        o.nc && a.setAttribute("nonce", o.nc),
+            a.src = o.p + "" + {
+                0: "9b10f65b0c7e7a1d8693",
+                1: "7641180249a9d7be3cfa"
+            }[t] + ".js";
+        var s = setTimeout(l, 12e4);
+        function l() {
+            a.onerror = a.onload = null,
+                clearTimeout(s);
+            var e = n[t];
+            0 !== e && (e && e[1](new Error("Loading chunk " + t + " failed.")),
+                n[t] = void 0)
+        }
+        return a.onerror = a.onload = l,
+            r.appendChild(a),
+            i
+    }
+        ,
+        o.m = t,
+        o.c = i,
+        o.d = function(t, e, i) {
+            o.o(t, e) || Object.defineProperty(t, e, {
+                configurable: !1,
+                enumerable: !0,
+                get: i
+            })
+        }
+        ,
+        o.n = function(t) {
+            var e = t && t.__esModule ? function() {
+                    return t["default"]
+                }
+                : function() {
+                    return t
+                }
+            ;
+            return o.d(e, "a", e),
+                e
+        }
+        ,
+        o.o = function(t, e) {
+            return Object.prototype.hasOwnProperty.call(t, e)
+        }
+        ,
+        o.p = "//an.yandex.ru/partner-code-bundles/6187/",
+        o.oe = function(t) {
+            throw console.error(t),
+                t
+        }
+        ,
+        o(o.s = 271)
+}([function(t, e, i) {
     "use strict";
     t.exports = i(351)
 }
@@ -101,31 +201,31 @@
         });
         t.exports = a
     }
-    // , function(t, e, i) {
-    //     "use strict";
-    //     var n = i(8)
-    //         , o = i(79);
-    //     function r() {}
-    //     function a(t) {
-    //         return r
-    //     }
-    //     o.log = n.logger.warn;
-    //     var s = {
-    //         log: a(),
-    //         warn: a(),
-    //         error: a(),
-    //         remoteLog: n.logger.info,
-    //         remoteLogString: n.logger.info,
-    //         isolate: function(t) {
-    //             return o("isolate", t || r, this, function(t) {
-    //                 t.preventProtect = !0
-    //             })
-    //         },
-    //         protect: o,
-    //         setProtectedTimeout: o.setTimeout
-    //     };
-    //     t.exports = s
-    // }
+    , function(t, e, i) {
+        "use strict";
+        var n = i(8)
+            , o = i(79);
+        function r() {}
+        function a(t) {
+            return r
+        }
+        o.log = n.logger.warn;
+        var s = {
+            log: a(),
+            warn: a(),
+            error: a(),
+            remoteLog: n.logger.info,
+            remoteLogString: n.logger.info,
+            isolate: function(t) {
+                return o("isolate", t || r, this, function(t) {
+                    t.preventProtect = !0
+                })
+            },
+            protect: o,
+            setProtectedTimeout: o.setTimeout
+        };
+        t.exports = s
+    }
     , function(t, e, i) {
         "use strict";
         e.__esModule = !0;
@@ -184,7 +284,8 @@
                         i.style.length)
                     return e[n];
             return null
-        },
+        }
+            ,
             e.getBrowserName = function() {
                 return (e.isIE ? "msie" : e.isFirefox && "firefox") || e.isSafari && "safari" || e.isOpera && "opera" || e.isYaBrowser && "yabrowser" || e.isChrome && "chrome" || e.isUCBrowser && "ucbrowser" || "unknown"
             }
@@ -212,25 +313,25 @@
                     n[o] = e.call(i, t[o], o, t);
                 return n
             }
-    // }
-    // , function(t, e, i) {
-    //     "use strict";
-    //     var n = i(78)
-    //         , o = n.BorderTypes
-    //         , r = n.BlockTypes
-    //         , a = i(322)
-    //         , s = Boolean(a.Ya.relHostname)
-    //         , l = {
-    //         defaultReloadTimeout: 30,
-    //         MAX_ADS_LIMIT: 9,
-    //         REFRESH_VIEWPORT_VISIBLE_PART: .5,
-    //         MIN_AREA_BIG_BLOCK: 242500,
-    //         VISIBLE_PORTION_BIG_BLOCK: .3,
-    //         VISIBLE_PORTION_BLOCK_DIRECT: 0,
-    //         VISIBLE_PORTION_BLOCK: .5,
-    //         VISIBLE_PORTION_BLOCK_DIRECT_COMMON: .5,
-    //         IS_REL_HOSTNAME: s
-    //     }
+    }
+    , function(t, e, i) {
+        "use strict";
+        var n = i(78)
+            , o = n.BorderTypes
+            , r = n.BlockTypes
+            , a = i(322)
+            , s = Boolean(a.Ya.relHostname)
+            , l = {
+            defaultReloadTimeout: 30,
+            MAX_ADS_LIMIT: 9,
+            REFRESH_VIEWPORT_VISIBLE_PART: .5,
+            MIN_AREA_BIG_BLOCK: 242500,
+            VISIBLE_PORTION_BIG_BLOCK: .3,
+            VISIBLE_PORTION_BLOCK_DIRECT: 0,
+            VISIBLE_PORTION_BLOCK: .5,
+            VISIBLE_PORTION_BLOCK_DIRECT_COMMON: .5,
+            IS_REL_HOSTNAME: s
+        }
             , p = s ? "//an.webvisor.org" : "//an.yandex.ru";
         l.urls = {
             anHostname: p,
@@ -415,6 +516,40 @@
         ;
         e.__esModule = !0;
         var o, r, a = i(26), s = {};
+        !function(t) {
+            t["RTB"] = "R",
+                t["ComponentDirectSync"] = "DNS",
+                t["ComponentDirectAsync"] = "DNA",
+                t["OldDirect"] = "DO"
+        }(o = e.BlockRenderProducts || (e.BlockRenderProducts = {})),
+            function(t) {
+                t["AdvManagerInit"] = "010",
+                    t["RtbRender"] = "020",
+                    t["RtbQueueTime"] = "030",
+                    t["RtbLoadDone"] = "040",
+                    t["RtbDataParsed"] = "050",
+                    t["RtbManagerStart"] = "060",
+                    t["RtbManagerBeforeRenderRtb"] = "070",
+                    t["RtbManagerDataPreparedRtb"] = "080",
+                    t["RtbBlockRenderInit"] = "090",
+                    t["RtbBlockRenderStart"] = "100",
+                    t["RtbBlockCreateWrapper"] = "110",
+                    t["RtbBlockRenderAd"] = "120",
+                    t["RtbBlockAfterRender"] = "130",
+                    t["RtbManagerBlockRenderedRtb"] = "140",
+                    t["RtbManagerBeforeRenderDirect"] = "070",
+                    t["DirectManagerStart"] = "080",
+                    t["DirectManagerInitEnd"] = "090",
+                    t["DirectManagerChooseBlockType"] = "100",
+                    t["ComponentBlockInit"] = "110",
+                    t["ComponentBlockBeforeRender"] = "120",
+                    t["ComponentBlockReadyToRender"] = "130",
+                    t["ComponentBlockRenderComplete"] = "140",
+                    t["ComponentBlockMounted"] = "150",
+                    t["ComponentBlockDisplayed"] = "151",
+                    t["ComponentBlockReady"] = "153",
+                    t["DirectManagerBlockRendered"] = "160"
+            }(r = e.BlockRenderSteps || (e.BlockRenderSteps = {}));
         var l, p, c, d = ((l = {})[r.AdvManagerInit] = 1,
             l[r.RtbRender] = 1,
             l[r.RtbQueueTime] = 1,
@@ -497,16 +632,16 @@
                 } : null
             }
     }
-    // , function(t, e, i) {
-    //     "use strict";
-    //     t.exports = function(t) {
-    //         for (var e, i = 1, n = arguments.length; i < n; i++)
-    //             if (e = arguments[i])
-    //                 for (var o in e)
-    //                     e.hasOwnProperty(o) && (t[o] = e[o]);
-    //         return t
-    //     }
-    // }
+    , function(t, e, i) {
+        "use strict";
+        t.exports = function(t) {
+            for (var e, i = 1, n = arguments.length; i < n; i++)
+                if (e = arguments[i])
+                    for (var o in e)
+                        e.hasOwnProperty(o) && (t[o] = e[o]);
+            return t
+        }
+    }
     , function(t, e, i) {
         "use strict";
         e.__esModule = !0,
@@ -573,71 +708,71 @@
         "use strict";
         t.exports = i(13).isFunction
     }
-    // , function(t, e, i) {
-    //     "use strict";
-    //     e.__esModule = !0,
-    //         e.experimentIds = {
-    //             media240x400: {
-    //                 OLD_240x400_CLICK_ENABLED: "OLD_240x400_CLICK_ENABLED",
-    //                 OLD_240x400_CLICK_DISABLED: "OLD_240x400_CLICK_DISABLED",
-    //                 MEDIA_240x400_BUTTON_ENABLED: "MEDIA_240x400_BUTTON_ENABLED",
-    //                 MEDIA_240x400_BUTTON_DISABLED: "MEDIA_240x400_BUTTON_DISABLED",
-    //                 MEDIA_240x400_FAST_ANIMATION_ENABLED: "MEDIA_240x400_FAST_ANIMATION_ENABLED",
-    //                 MEDIA_240x400_FAST_ANIMATION_DISABLED: "MEDIA_240x400_FAST_ANIMATION_DISABLED",
-    //                 MEDIA_240x400_IGNORE_SETTINGS_ENABLED: "MEDIA_240x400_IGNORE_SETTINGS_ENABLED",
-    //                 MEDIA_240x400_IGNORE_SETTINGS_DISABLED: "MEDIA_240x400_IGNORE_SETTINGS_DISABLED",
-    //                 MEDIA_240x400_SHOW_ENABLED: "MEDIA_240x400_SHOW_ENABLED",
-    //                 MEDIA_240x400_SHOW_DISABLED: "MEDIA_240x400_SHOW_DISABLED"
-    //             },
-    //             r320x50: {
-    //                 ENABLED: "R_320x50_ENABLED",
-    //                 DISABLED: "R_320x50_DISABLED",
-    //                 HSL_ENABLED: "R_320x50_HSL_ENABLED",
-    //                 HSL_DISABLED: "R_320x50_HSL_DISABLED"
-    //             },
-    //             vertical: {
-    //                 VERTICAL_DESKTOP_ENABLED: "VERTICAL_DESKTOP_ENABLED",
-    //                 VERTICAL_DESKTOP_DISABLED: "VERTICAL_DESKTOP_DISABLED",
-    //                 VERTICAL_MOBILE_ENABLED: "VERTICAL_MOBILE_ENABLED",
-    //                 VERTICAL_MOBILE_DISABLED: "VERTICAL_MOBILE_DISABLED"
-    //             },
-    //             rmp: {
-    //                 RMP_CONTROL: "RMP_CONTROL",
-    //                 RMP_ABILITIES: "RMP_ABILITIES"
-    //             },
-    //             stub: {
-    //                 STUB_CONTROL: "STUB_CONTROL",
-    //                 STUB_DOMAIN: "STUB_DOMAIN",
-    //                 STUB_WITH_SCALE: "STUB_WITH_SCALE",
-    //                 STUB_WITHOUT_SCALE: "STUB_WITHOUT_SCALE"
-    //             },
-    //             storeButton: {
-    //                 ENABLED: "STORE_BUTTON_ENABLED",
-    //                 DISABLED: "STORE_BUTTON_DISABLED"
-    //             },
-    //             ssSkipToken: {
-    //                 ENABLED: "SS_SKIP_TOKEN_ENABLED",
-    //                 WIDE_LOG: "SS_SKIP_TOKEN_WIDE_LOG",
-    //                 CLIENT: "SS_SKIP_TOKEN_CLIENT",
-    //                 SERVER_MANUAL: "SS_SKIP_TOKEN_SERVER_MANUAL",
-    //                 SERVER_AUTO: "SS_SKIP_TOKEN_SERVER_AUTO"
-    //             },
-    //             scrollSlider: {
-    //                 ENABLED: "SCROLL_SLIDER_ENABLED",
-    //                 DISABLED: "SCROLL_SLIDER_DISABLED"
-    //             },
-    //             horizontalPhoneButton: {
-    //                 ENABLED: "HORIZONTAL_PHONE_ENABLED",
-    //                 DISABLED: "HORIZONTAL_PHONE_DISABLED"
-    //             },
-    //             intersectionVisibility: {
-    //                 FIX: "INTERSECTION_VISIBILITY_ENABLED"
-    //             },
-    //             hitFeatures: {
-    //                 ENABLED: "HIT_FEATURES_ENABLED"
-    //             }
-    //         }
-    // }
+    , function(t, e, i) {
+        "use strict";
+        e.__esModule = !0,
+            e.experimentIds = {
+                media240x400: {
+                    OLD_240x400_CLICK_ENABLED: "OLD_240x400_CLICK_ENABLED",
+                    OLD_240x400_CLICK_DISABLED: "OLD_240x400_CLICK_DISABLED",
+                    MEDIA_240x400_BUTTON_ENABLED: "MEDIA_240x400_BUTTON_ENABLED",
+                    MEDIA_240x400_BUTTON_DISABLED: "MEDIA_240x400_BUTTON_DISABLED",
+                    MEDIA_240x400_FAST_ANIMATION_ENABLED: "MEDIA_240x400_FAST_ANIMATION_ENABLED",
+                    MEDIA_240x400_FAST_ANIMATION_DISABLED: "MEDIA_240x400_FAST_ANIMATION_DISABLED",
+                    MEDIA_240x400_IGNORE_SETTINGS_ENABLED: "MEDIA_240x400_IGNORE_SETTINGS_ENABLED",
+                    MEDIA_240x400_IGNORE_SETTINGS_DISABLED: "MEDIA_240x400_IGNORE_SETTINGS_DISABLED",
+                    MEDIA_240x400_SHOW_ENABLED: "MEDIA_240x400_SHOW_ENABLED",
+                    MEDIA_240x400_SHOW_DISABLED: "MEDIA_240x400_SHOW_DISABLED"
+                },
+                r320x50: {
+                    ENABLED: "R_320x50_ENABLED",
+                    DISABLED: "R_320x50_DISABLED",
+                    HSL_ENABLED: "R_320x50_HSL_ENABLED",
+                    HSL_DISABLED: "R_320x50_HSL_DISABLED"
+                },
+                vertical: {
+                    VERTICAL_DESKTOP_ENABLED: "VERTICAL_DESKTOP_ENABLED",
+                    VERTICAL_DESKTOP_DISABLED: "VERTICAL_DESKTOP_DISABLED",
+                    VERTICAL_MOBILE_ENABLED: "VERTICAL_MOBILE_ENABLED",
+                    VERTICAL_MOBILE_DISABLED: "VERTICAL_MOBILE_DISABLED"
+                },
+                rmp: {
+                    RMP_CONTROL: "RMP_CONTROL",
+                    RMP_ABILITIES: "RMP_ABILITIES"
+                },
+                stub: {
+                    STUB_CONTROL: "STUB_CONTROL",
+                    STUB_DOMAIN: "STUB_DOMAIN",
+                    STUB_WITH_SCALE: "STUB_WITH_SCALE",
+                    STUB_WITHOUT_SCALE: "STUB_WITHOUT_SCALE"
+                },
+                storeButton: {
+                    ENABLED: "STORE_BUTTON_ENABLED",
+                    DISABLED: "STORE_BUTTON_DISABLED"
+                },
+                ssSkipToken: {
+                    ENABLED: "SS_SKIP_TOKEN_ENABLED",
+                    WIDE_LOG: "SS_SKIP_TOKEN_WIDE_LOG",
+                    CLIENT: "SS_SKIP_TOKEN_CLIENT",
+                    SERVER_MANUAL: "SS_SKIP_TOKEN_SERVER_MANUAL",
+                    SERVER_AUTO: "SS_SKIP_TOKEN_SERVER_AUTO"
+                },
+                scrollSlider: {
+                    ENABLED: "SCROLL_SLIDER_ENABLED",
+                    DISABLED: "SCROLL_SLIDER_DISABLED"
+                },
+                horizontalPhoneButton: {
+                    ENABLED: "HORIZONTAL_PHONE_ENABLED",
+                    DISABLED: "HORIZONTAL_PHONE_DISABLED"
+                },
+                intersectionVisibility: {
+                    FIX: "INTERSECTION_VISIBILITY_ENABLED"
+                },
+                hitFeatures: {
+                    ENABLED: "HIT_FEATURES_ENABLED"
+                }
+            }
+    }
     , function(t, e, i) {
         "use strict";
         e.__esModule = !0;
@@ -649,34 +784,34 @@
             , l = i(16)
             , p = i(80)
             , c = i(359);
-        // e.hostsMap = {
-        //     yandex: /(?:(tv|news)\.yandex(\.\w+)+)|(?:yandex(\.\w+)+\/pogoda)/i,
-        //     vk: /vk\.com/i,
-        //     ok: /ok\.ru/i,
-        //     avito: /(?:avito\.dev)|(?:avito\.ru)/i,
-        //     rambler: /(?:rambler\.ru)|(?:autorambler\.ru)/i,
-        //     mail: /(?:devmail\.ru)|(?:mail\.ru)/i,
-        //     lenta: /lenta\.ru/i,
-        //     gazeta: /gazeta\.ru/i,
-        //     gismeteo: /gismeteo\.ru/i,
-        //     rbc: /rbc(\.\w+)/i,
-        //     secretmag: /secretmag\.ru/i,
-        //     rg: /rg\.ru/i,
-        //     eda: /eda.ru/i,
-        //     nightparty: /nightparty\.ru/i,
-        //     afisha: /afisha\.ru/i,
-        //     motor: /motor\.ru/i,
-        //     moslenta: /moslenta\.ru/i,
-        //     championat: /championat\.com/i,
-        //     letidor: /letidor\.ru/i,
-        //     quto: /quto\.ru/i,
-        //     wmj: /wmj\.ru/i,
-        //     indicator: /indicator\.ru/i,
-        //     ferra: /ferra\.ru/i,
-        //     rns: /rns\.online/i,
-        //     passion: /passion\.ru/i,
-        //     livejournal: /livejournal\.com/i
-        // },
+        e.hostsMap = {
+            yandex: /(?:(tv|news)\.yandex(\.\w+)+)|(?:yandex(\.\w+)+\/pogoda)/i,
+            vk: /vk\.com/i,
+            ok: /ok\.ru/i,
+            avito: /(?:avito\.dev)|(?:avito\.ru)/i,
+            rambler: /(?:rambler\.ru)|(?:autorambler\.ru)/i,
+            mail: /(?:devmail\.ru)|(?:mail\.ru)/i,
+            lenta: /lenta\.ru/i,
+            gazeta: /gazeta\.ru/i,
+            gismeteo: /gismeteo\.ru/i,
+            rbc: /rbc(\.\w+)/i,
+            secretmag: /secretmag\.ru/i,
+            rg: /rg\.ru/i,
+            eda: /eda.ru/i,
+            nightparty: /nightparty\.ru/i,
+            afisha: /afisha\.ru/i,
+            motor: /motor\.ru/i,
+            moslenta: /moslenta\.ru/i,
+            championat: /championat\.com/i,
+            letidor: /letidor\.ru/i,
+            quto: /quto\.ru/i,
+            wmj: /wmj\.ru/i,
+            indicator: /indicator\.ru/i,
+            ferra: /ferra\.ru/i,
+            rns: /rns\.online/i,
+            passion: /passion\.ru/i,
+            livejournal: /livejournal\.com/i
+        },
             e.pageIdList = [],
             e.blockIdList = [];
         var d, u, m = Object.keys(e.hostsMap);
@@ -713,18 +848,18 @@
                 })
             }
             ,
-            // e.isPageIgnored = function(t) {
-            //     var i = void 0 === t ? {} : t
-            //         , n = i.pageId
-            //         , o = i.list
-            //         , r = void 0 === o ? e.pageIdList : o
-            //         , a = i.include
-            //         , s = void 0 === a ? [] : a
-            //         , l = i.exclude
-            //         , p = void 0 === l ? [] : l;
-            //     return (c.includes(r, n) || c.includes(s, n)) && !c.includes(p, n)
-            // }
-            // ,
+            e.isPageIgnored = function(t) {
+                var i = void 0 === t ? {} : t
+                    , n = i.pageId
+                    , o = i.list
+                    , r = void 0 === o ? e.pageIdList : o
+                    , a = i.include
+                    , s = void 0 === a ? [] : a
+                    , l = i.exclude
+                    , p = void 0 === l ? [] : l;
+                return (c.includes(r, n) || c.includes(s, n)) && !c.includes(p, n)
+            }
+            ,
             e.isBlockIgnored = function(t) {
                 var i = void 0 === t ? {} : t
                     , n = i.blockId
@@ -737,17 +872,17 @@
                 return (c.includes(r, n) || c.includes(s, n)) && !c.includes(p, n)
             }
     }
-    // , function(t, e, i) {
-    //     "use strict";
-    //     e.__esModule = !0,
-    //         e.indexOf = function(t, e, i) {
-    //             void 0 === i && (i = 0);
-    //             for (var n = i; n < t.length; n++)
-    //                 if (t[n] === e)
-    //                     return n;
-    //             return -1
-    //         }
-    // }
+    , function(t, e, i) {
+        "use strict";
+        e.__esModule = !0,
+            e.indexOf = function(t, e, i) {
+                void 0 === i && (i = 0);
+                for (var n = i; n < t.length; n++)
+                    if (t[n] === e)
+                        return n;
+                return -1
+            }
+    }
     , function(t, e, i) {
         "use strict";
         e.__esModule = !0;
@@ -23549,6 +23684,29 @@
             , E = v.VISIBLE_PORTION_BLOCK
             , T = v.VISIBLE_PORTION_BIG_BLOCK
             , R = i(590).rtb;
+        function L(t) {
+            this._isContainingSafeFrame = !1,
+                this._data = t.data || {},
+                this._isAlternativeCode = Boolean(this._data && this._data.rtb && this._data.rtb.debug),
+                this.dataSource = t.dataSource,
+                this.blockId = t.blockId,
+                this._checkVisibility = t.checkVisibility,
+                this._visibilityManager = t.visibilityManager,
+                this._nonce = t.nonce,
+                this._mainContId = "ya_partner_" + this.blockId + (t.pageNumber ? "-" + t.pageNumber : ""),
+                this._adUsageStorage = t.adUsageStorage,
+                this._visibilityConfirmed = !1;
+            var e = this._data.rtb || {};
+            this._protected = Boolean(e.html5),
+                this._basePath = this._data.rtb.basePath,
+                this._innerComponents = [],
+            t.renderParams && (this._confirmAtOnce = t.renderParams.confirmAtOnce,
+                this._confirmByHandler = t.renderParams.confirmByHandler,
+                this._horizontalAlign = t.renderParams.horizontalAlign),
+                this._testtag = new h.RtbTesttag({
+                    isApp: this.dataSource.isApp()
+                })
+        }
         L.prototype = {
             render: function(t) {
                 (0,
@@ -23562,6 +23720,85 @@
                     e.displayDelayed ? ((0,
                         n.stopLoggingTime)(this.dataSource.getUniqueId()),
                         this._renderOnVisible(this._container)) : this._render(this._container)
+            },
+            _isAdtuneBig: function() {
+                return this._size[0] * this._size[1] >= 75e3
+            },
+            _createWrapper: function(t) {
+                var e = this.dataSource.getLanguage()
+                    , i = (0,
+                    l.getLangCode)(e)
+                    , n = R({
+                    id: this._mainContId,
+                    lang: i,
+                    html: y.format(t, {
+                        id: this._mainContId,
+                        sandbox: "",
+                        width: this._size[0],
+                        height: this._size[1]
+                    })
+                });
+                A.innerHTML(this._container, n),
+                    this._styleElement = this._appendStyles(this._isAdtuneBig())
+            },
+            destructor: function() {
+                this._clearComponents(),
+                this._styleElement && (y.dom.remove(this._styleElement),
+                    this._styleElement = null),
+                this._containerVisibilityChecker && this._containerVisibilityChecker.stop(),
+                this._contentVisibilityChecker && this._contentVisibilityChecker.stop(),
+                this._visibilityConfirmer && this._visibilityConfirmer.stop(),
+                this._isContainingSafeFrame && this._destroySafeFrame(),
+                this._container && (0,
+                    _.clearHTML)(this._container)
+            },
+            _clearComponents: function() {
+                y.each(this._innerComponents, function(t) {
+                    t.destructor ? t.destructor() : t.destroy && t.destroy()
+                }),
+                    this._innerComponents = []
+            },
+            _initAdtune: function() {
+                if (Boolean(this.dataSource.getAbuseUrl()) && !this.dataSource.isApp()) {
+                    var t = y.dom.querySelector(".yap-rtb__adtune-button", this._container)[0];
+                    if (t) {
+                        var e = new k({
+                            class: "yap-rtb__adtune",
+                            language: this.dataSource.getLanguage(),
+                            isOldIE: !1,
+                            mod: "_round",
+                            size: this._isAdtuneBig() ? "L" : "M"
+                        });
+                        I.renderToNode(t, e),
+                            e.on("click:adtune", this._onClickAdtune, this),
+                            this._innerComponents.push(e),
+                            this._adtuneComponent = e
+                    }
+                }
+            },
+            _onClickAdtune: function() {
+                this._feedbackComponent ? this._feedbackComponent.isVisible() ? (this._feedbackComponent.hide(),
+                    this._adtuneComponent.enableTooltip()) : (this._feedbackComponent.show(),
+                    this._adtuneComponent.disableTooltip()) : (this._initFeedbackMenu(),
+                    this._feedbackComponent.show(),
+                    this._adtuneComponent.disableTooltip())
+            },
+            _initFeedbackMenu: function() {
+                var t = y.dom.querySelector(".yap-rtb__wrapper", this._container)[0]
+                    , e = new C({
+                    class: "yap-rtb__feedback",
+                    language: this.dataSource.getLanguage(),
+                    abuseUrl: this.dataSource.getAbuseUrl(),
+                    onReceivedFeedback: y.bind(this._onReceivedFeedback, this)
+                });
+                t.appendChild(I.render(e)),
+                    e.fitSize(),
+                    this._innerComponents.push(e),
+                    this._feedbackComponent = e
+            },
+            _onReceivedFeedback: function(t) {
+                this._adtuneComponent.destroy(),
+                    this.dataSource.abuseAd(t)
             },
             _appendStyles: function(t) {
                 var e = g.reset
@@ -23591,6 +23828,40 @@
                 head: '<base href="${baseURL}" target="_blank"/>',
                 body: "${html}"
             }),
+            _render: function(t) {
+                if ((0,
+                        n.logRenderLabel)(this.dataSource.getUniqueId(), n.BlockRenderSteps.RtbBlockRenderStart),
+                        this._isInPage())
+                    this.renderInPage(t);
+                else {
+                    this._createTemplate();
+                    var e = y.dom.querySelector(".yap-rtb__iframe", t)[0];
+                    (0,
+                        n.logRenderLabel)(this.dataSource.getUniqueId(), n.BlockRenderSteps.RtbBlockCreateWrapper),
+                        this._renderAd(e),
+                        (0,
+                            n.logRenderLabel)(this.dataSource.getUniqueId(), n.BlockRenderSteps.RtbBlockRenderAd),
+                        this._afterRender(e),
+                        (0,
+                            n.logRenderLabel)(this.dataSource.getUniqueId(), n.BlockRenderSteps.RtbBlockAfterRender)
+                }
+            },
+            _createTemplate: function() {
+                var t = this.dataSource.getHtml();
+                this._createWrapper(!t || this._isAlternativeCode && !(0,
+                    r.isTurboPage)(window) ? v.RtbIframe.TAG : "")
+            },
+            _renderAd: function(t) {
+                var e = this.dataSource.getHtml();
+                e && this._isAlternativeCode && !(0,
+                    r.isTurboPage)(window) ? this._renderAlternativeCode(t) : e ? this._renderSafeframe(t) : this._renderFromUrl(t)
+            },
+            _afterRender: function(t) {
+                this._initAdtune(),
+                this._confirmByHandler || this._createVisibilityConfirmation(t),
+                    this._createVisibilityChecker(t),
+                    this._visibilityManager.sendWinNotice()
+            },
             _renderFromUrl: function(t) {
                 var e = {}
                     , i = this.dataSource.getUrl()
@@ -23624,6 +23895,27 @@
                 }
                     , r = t.getElementsByTagName("iframe")[0];
                 y.dom.setIframeHTML(r, y.format(i, o))
+            },
+            _renderSafeframe: function(t) {
+                var e = this
+                    , i = "" + (0,
+                    u.getPreventMissClicksScript)() + this.dataSource.getHtml()
+                    , n = this.dataSource.getSize()
+                    , o = n[0]
+                    , r = n[1]
+                    , a = this._getSafeframeBasePath();
+                (0,
+                    d.initSafeframe)(window, t, {
+                    width: o,
+                    height: r,
+                    html: i,
+                    id: this._mainContId,
+                    protected: this._protected,
+                    basePath: a
+                }, void 0, void 0, function(t, i) {
+                    return e._handleSafeFrameErrors(t, i)
+                }),
+                    this._isContainingSafeFrame = !0
             },
             _getSafeframeBasePath: function() {
                 var t = {
@@ -23783,6 +24075,24 @@
             }
         },
             t.exports = L
+    }
+    , function(t, e, i) {
+        "use strict";
+        e.__esModule = !0;
+        i(83);
+        e.getCalcValue = function(t) {
+            return t
+        }
+    }
+    , function(t, e, i) {
+        t.exports = function(t, e) {
+            i.e(0).then(function() {
+                t(i(602))
+            }
+                .bind(null, i)).catch(function() {
+                e && e.apply(this, arguments)
+            })
+        }
     }
     , function(t, e, i) {
         i(2),
