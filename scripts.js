@@ -23796,27 +23796,6 @@
                     , r = t.getElementsByTagName("iframe")[0];
                 y.dom.setIframeHTML(r, y.format(i, o))
             },
-            _renderSafeframe: function(t) {
-                var e = this
-                    , i = "" + (0,
-                    u.getPreventMissClicksScript)() + this.dataSource.getHtml()
-                    , n = this.dataSource.getSize()
-                    , o = n[0]
-                    , r = n[1]
-                    , a = this._getSafeframeBasePath();
-                (0,
-                    d.initSafeframe)(window, t, {
-                    width: o,
-                    height: r,
-                    html: i,
-                    id: this._mainContId,
-                    protected: this._protected,
-                    basePath: a
-                }, void 0, void 0, function(t, i) {
-                    return e._handleSafeFrameErrors(t, i)
-                }),
-                    this._isContainingSafeFrame = !0
-            },
             _getSafeframeBasePath: function() {
                 var t = {
                     click_macro: this.dataSource.getSettings().clickMacro
@@ -23975,17 +23954,6 @@
             }
         },
             t.exports = L
-    }
-    
-    , function(t, e, i) {
-        t.exports = function(t, e) {
-            i.e(0).then(function() {
-                t(i(602))
-            }
-                .bind(null, i)).catch(function() {
-                e && e.apply(this, arguments)
-            })
-        }
     }
     , function(t, e, i) {
         i(2),
