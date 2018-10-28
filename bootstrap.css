@@ -1,7 +1,5 @@
-@import url("./fonts/pt_sans.css");
+/* @import url("./fonts/pt_sans.css"); */
 
-article,
-details,
 footer,
 header,
 nav,
@@ -21,15 +19,12 @@ html {
   -ms-text-size-adjust: 100%;
 }
 
-a:focus {
-  outline: thin dotted #333;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
 
 a:hover,
 a:active {
   outline: 0;
+  color: #354b60;
+  text-decoration: underline;
 }
 
 img {
@@ -42,16 +37,11 @@ img {
 }
 
 button,
-input,
-select
+input
 {
   margin: 0;
   font-size: 100%;
   vertical-align: middle;
-}
-
-button,
-input {
   *overflow: visible;
   line-height: normal;
 }
@@ -69,7 +59,6 @@ html input[type="button"] {
 }
 
 label,
-select,
 button,
 input[type="button"],
 input[type="radio"] {
@@ -90,93 +79,19 @@ a {
   text-decoration: none;
 }
 
-a:hover,
-a:focus {
-  color: #354b60;
-  text-decoration: underline;
-}
-
-
-
-
-
-.row {
-  margin-left: -20px;
-  *zoom: 1;
-}
-
-.row:before,
-.row:after {
-  display: table;
-  line-height: 0;
-  content: "";
-}
-
-.row:after {
-  clear: both;
-}
-
-[class*="span"] {
-  float: left;
-  min-height: 1px;
-  margin-left: 20px;
-}
-
-.container {
-  margin-right: auto;
-  margin-left: auto;
-  *zoom: 1;
-}
-
-.container:before,
-.container:after {
-  display: table;
-  line-height: 0;
-  content: "";
-}
-
-.container:after {
-  clear: both;
-}
-
-p {
-  margin: 0 0 10px;
-}
-
 ul
 {
   padding: 0;
   margin: 0 0 10px 25px;
 }
 
-ul ul
-{
-  margin-bottom: 0;
-}
-
 li {
   line-height: 20px;
 }
 
-ul.inline
-{
-  margin-left: 0;
-  list-style: none;
-}
-
-ul.inline > li
-{
-  display: inline-block;
-  *display: inline;
-  padding-right: 5px;
-  padding-left: 5px;
-  *zoom: 1;
-}
-
 label,
 input,
-button,
-select
+button
 {
   font-size: 15px;
   font-weight: normal;
@@ -184,8 +99,7 @@ select
 }
 
 input,
-button,
-select
+button
 {
   font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -193,21 +107,6 @@ select
 label {
   display: block;
   margin-bottom: 5px;
-}
-
-select
-{
-  display: inline-block;
-  height: 20px;
-  padding: 4px 6px;
-  margin-bottom: 10px;
-  font-size: 15px;
-  line-height: 20px;
-  color: #95a5a6;
-  vertical-align: middle;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
 }
 
 input
@@ -224,21 +123,6 @@ input[type="radio"]
   width: auto;
 }
 
-select {
-  height: 30px;
-  *margin-top: 4px;
-  line-height: 30px;
-  width: 220px;
-  background-color: #ffffff;
-  border: 1px solid #dce4ec;
-}
-
-select[multiple],
-select[size] {
-  height: auto;
-}
-
-select:focus,
 input[type="radio"]:focus
 {
   outline: thin dotted #333;
@@ -261,11 +145,8 @@ input::-webkit-input-placeholder {
 }
 
 input[disabled],
-select[disabled],
-textarea[disabled],
-input[readonly],
-select[readonly],
-textarea[readonly] {
+input[readonly]
+{
   cursor: not-allowed;
   background-color: #eaeded;
 }
@@ -276,60 +157,16 @@ input[type="radio"][readonly]
   background-color: transparent;
 }
 
-input:focus:invalid,
-select:focus:invalid {
+input:focus:invalid
+{
   color: #b94a48;
   border-color: #ee5f5b;
 }
 
-input:focus:invalid:focus,
-select:focus:invalid:focus {
+input:focus:invalid:focus
+{
   border-color: #e9322d;
   -webkit-box-shadow: 0 0 6px #f8b9b7;
   -moz-box-shadow: 0 0 6px #f8b9b7;
   box-shadow: 0 0 6px #f8b9b7;
-}
-@-webkit-keyframes progress-bar-stripes {
-  from {
-    background-position: 40px 0;
-  }
-  to {
-    background-position: 0 0;
-  }
-}
-
-@-moz-keyframes progress-bar-stripes {
-  from {
-    background-position: 40px 0;
-  }
-  to {
-    background-position: 0 0;
-  }
-}
-
-@-ms-keyframes progress-bar-stripes {
-  from {
-    background-position: 40px 0;
-  }
-  to {
-    background-position: 0 0;
-  }
-}
-
-@-o-keyframes progress-bar-stripes {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 40px 0;
-  }
-}
-
-@keyframes progress-bar-stripes {
-  from {
-    background-position: 40px 0;
-  }
-  to {
-    background-position: 0 0;
-  }
 }
