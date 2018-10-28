@@ -415,41 +415,6 @@
         ;
         e.__esModule = !0;
         var o, r, a = i(26), s = {};
-        // !function(t) {
-        //     t["RTB"] = "R",
-        //         t["ComponentDirectSync"] = "DNS",
-        //         t["ComponentDirectAsync"] = "DNA",
-        //         t["OldDirect"] = "DO"
-        // }
-        // (o = e.BlockRenderProducts || (e.BlockRenderProducts = {})),
-        //     function(t) {
-        //         t["AdvManagerInit"] = "010",
-        //             t["RtbRender"] = "020",
-        //             t["RtbQueueTime"] = "030",
-        //             t["RtbLoadDone"] = "040",
-        //             t["RtbDataParsed"] = "050",
-        //             t["RtbManagerStart"] = "060",
-        //             t["RtbManagerBeforeRenderRtb"] = "070",
-        //             t["RtbManagerDataPreparedRtb"] = "080",
-        //             t["RtbBlockRenderInit"] = "090",
-        //             t["RtbBlockRenderStart"] = "100",
-        //             t["RtbBlockCreateWrapper"] = "110",
-        //             t["RtbBlockRenderAd"] = "120",
-        //             t["RtbBlockAfterRender"] = "130",
-        //             t["RtbManagerBlockRenderedRtb"] = "140",
-        //             t["RtbManagerBeforeRenderDirect"] = "070",
-        //             t["DirectManagerStart"] = "080",
-        //             t["DirectManagerInitEnd"] = "090",
-        //             t["DirectManagerChooseBlockType"] = "100",
-        //             t["ComponentBlockInit"] = "110",
-        //             t["ComponentBlockBeforeRender"] = "120",
-        //             t["ComponentBlockReadyToRender"] = "130",
-        //             t["ComponentBlockRenderComplete"] = "140",
-        //             t["ComponentBlockMounted"] = "150",
-        //             t["ComponentBlockDisplayed"] = "151",
-        //             t["ComponentBlockReady"] = "153",
-        //             t["DirectManagerBlockRendered"] = "160"
-        //     }(r = e.BlockRenderSteps || (e.BlockRenderSteps = {}));
         var l, p, c, d = ((l = {})[r.AdvManagerInit] = 1,
             l[r.RtbRender] = 1,
             l[r.RtbQueueTime] = 1,
@@ -532,16 +497,16 @@
                 } : null
             }
     }
-    , function(t, e, i) {
-        "use strict";
-        t.exports = function(t) {
-            for (var e, i = 1, n = arguments.length; i < n; i++)
-                if (e = arguments[i])
-                    for (var o in e)
-                        e.hasOwnProperty(o) && (t[o] = e[o]);
-            return t
-        }
-    }
+    // , function(t, e, i) {
+    //     "use strict";
+    //     t.exports = function(t) {
+    //         for (var e, i = 1, n = arguments.length; i < n; i++)
+    //             if (e = arguments[i])
+    //                 for (var o in e)
+    //                     e.hasOwnProperty(o) && (t[o] = e[o]);
+    //         return t
+    //     }
+    // }
     , function(t, e, i) {
         "use strict";
         e.__esModule = !0,
@@ -608,71 +573,71 @@
         "use strict";
         t.exports = i(13).isFunction
     }
-    , function(t, e, i) {
-        "use strict";
-        e.__esModule = !0,
-            e.experimentIds = {
-                media240x400: {
-                    OLD_240x400_CLICK_ENABLED: "OLD_240x400_CLICK_ENABLED",
-                    OLD_240x400_CLICK_DISABLED: "OLD_240x400_CLICK_DISABLED",
-                    MEDIA_240x400_BUTTON_ENABLED: "MEDIA_240x400_BUTTON_ENABLED",
-                    MEDIA_240x400_BUTTON_DISABLED: "MEDIA_240x400_BUTTON_DISABLED",
-                    MEDIA_240x400_FAST_ANIMATION_ENABLED: "MEDIA_240x400_FAST_ANIMATION_ENABLED",
-                    MEDIA_240x400_FAST_ANIMATION_DISABLED: "MEDIA_240x400_FAST_ANIMATION_DISABLED",
-                    MEDIA_240x400_IGNORE_SETTINGS_ENABLED: "MEDIA_240x400_IGNORE_SETTINGS_ENABLED",
-                    MEDIA_240x400_IGNORE_SETTINGS_DISABLED: "MEDIA_240x400_IGNORE_SETTINGS_DISABLED",
-                    MEDIA_240x400_SHOW_ENABLED: "MEDIA_240x400_SHOW_ENABLED",
-                    MEDIA_240x400_SHOW_DISABLED: "MEDIA_240x400_SHOW_DISABLED"
-                },
-                r320x50: {
-                    ENABLED: "R_320x50_ENABLED",
-                    DISABLED: "R_320x50_DISABLED",
-                    HSL_ENABLED: "R_320x50_HSL_ENABLED",
-                    HSL_DISABLED: "R_320x50_HSL_DISABLED"
-                },
-                vertical: {
-                    VERTICAL_DESKTOP_ENABLED: "VERTICAL_DESKTOP_ENABLED",
-                    VERTICAL_DESKTOP_DISABLED: "VERTICAL_DESKTOP_DISABLED",
-                    VERTICAL_MOBILE_ENABLED: "VERTICAL_MOBILE_ENABLED",
-                    VERTICAL_MOBILE_DISABLED: "VERTICAL_MOBILE_DISABLED"
-                },
-                rmp: {
-                    RMP_CONTROL: "RMP_CONTROL",
-                    RMP_ABILITIES: "RMP_ABILITIES"
-                },
-                stub: {
-                    STUB_CONTROL: "STUB_CONTROL",
-                    STUB_DOMAIN: "STUB_DOMAIN",
-                    STUB_WITH_SCALE: "STUB_WITH_SCALE",
-                    STUB_WITHOUT_SCALE: "STUB_WITHOUT_SCALE"
-                },
-                storeButton: {
-                    ENABLED: "STORE_BUTTON_ENABLED",
-                    DISABLED: "STORE_BUTTON_DISABLED"
-                },
-                ssSkipToken: {
-                    ENABLED: "SS_SKIP_TOKEN_ENABLED",
-                    WIDE_LOG: "SS_SKIP_TOKEN_WIDE_LOG",
-                    CLIENT: "SS_SKIP_TOKEN_CLIENT",
-                    SERVER_MANUAL: "SS_SKIP_TOKEN_SERVER_MANUAL",
-                    SERVER_AUTO: "SS_SKIP_TOKEN_SERVER_AUTO"
-                },
-                scrollSlider: {
-                    ENABLED: "SCROLL_SLIDER_ENABLED",
-                    DISABLED: "SCROLL_SLIDER_DISABLED"
-                },
-                horizontalPhoneButton: {
-                    ENABLED: "HORIZONTAL_PHONE_ENABLED",
-                    DISABLED: "HORIZONTAL_PHONE_DISABLED"
-                },
-                intersectionVisibility: {
-                    FIX: "INTERSECTION_VISIBILITY_ENABLED"
-                },
-                hitFeatures: {
-                    ENABLED: "HIT_FEATURES_ENABLED"
-                }
-            }
-    }
+    // , function(t, e, i) {
+    //     "use strict";
+    //     e.__esModule = !0,
+    //         e.experimentIds = {
+    //             media240x400: {
+    //                 OLD_240x400_CLICK_ENABLED: "OLD_240x400_CLICK_ENABLED",
+    //                 OLD_240x400_CLICK_DISABLED: "OLD_240x400_CLICK_DISABLED",
+    //                 MEDIA_240x400_BUTTON_ENABLED: "MEDIA_240x400_BUTTON_ENABLED",
+    //                 MEDIA_240x400_BUTTON_DISABLED: "MEDIA_240x400_BUTTON_DISABLED",
+    //                 MEDIA_240x400_FAST_ANIMATION_ENABLED: "MEDIA_240x400_FAST_ANIMATION_ENABLED",
+    //                 MEDIA_240x400_FAST_ANIMATION_DISABLED: "MEDIA_240x400_FAST_ANIMATION_DISABLED",
+    //                 MEDIA_240x400_IGNORE_SETTINGS_ENABLED: "MEDIA_240x400_IGNORE_SETTINGS_ENABLED",
+    //                 MEDIA_240x400_IGNORE_SETTINGS_DISABLED: "MEDIA_240x400_IGNORE_SETTINGS_DISABLED",
+    //                 MEDIA_240x400_SHOW_ENABLED: "MEDIA_240x400_SHOW_ENABLED",
+    //                 MEDIA_240x400_SHOW_DISABLED: "MEDIA_240x400_SHOW_DISABLED"
+    //             },
+    //             r320x50: {
+    //                 ENABLED: "R_320x50_ENABLED",
+    //                 DISABLED: "R_320x50_DISABLED",
+    //                 HSL_ENABLED: "R_320x50_HSL_ENABLED",
+    //                 HSL_DISABLED: "R_320x50_HSL_DISABLED"
+    //             },
+    //             vertical: {
+    //                 VERTICAL_DESKTOP_ENABLED: "VERTICAL_DESKTOP_ENABLED",
+    //                 VERTICAL_DESKTOP_DISABLED: "VERTICAL_DESKTOP_DISABLED",
+    //                 VERTICAL_MOBILE_ENABLED: "VERTICAL_MOBILE_ENABLED",
+    //                 VERTICAL_MOBILE_DISABLED: "VERTICAL_MOBILE_DISABLED"
+    //             },
+    //             rmp: {
+    //                 RMP_CONTROL: "RMP_CONTROL",
+    //                 RMP_ABILITIES: "RMP_ABILITIES"
+    //             },
+    //             stub: {
+    //                 STUB_CONTROL: "STUB_CONTROL",
+    //                 STUB_DOMAIN: "STUB_DOMAIN",
+    //                 STUB_WITH_SCALE: "STUB_WITH_SCALE",
+    //                 STUB_WITHOUT_SCALE: "STUB_WITHOUT_SCALE"
+    //             },
+    //             storeButton: {
+    //                 ENABLED: "STORE_BUTTON_ENABLED",
+    //                 DISABLED: "STORE_BUTTON_DISABLED"
+    //             },
+    //             ssSkipToken: {
+    //                 ENABLED: "SS_SKIP_TOKEN_ENABLED",
+    //                 WIDE_LOG: "SS_SKIP_TOKEN_WIDE_LOG",
+    //                 CLIENT: "SS_SKIP_TOKEN_CLIENT",
+    //                 SERVER_MANUAL: "SS_SKIP_TOKEN_SERVER_MANUAL",
+    //                 SERVER_AUTO: "SS_SKIP_TOKEN_SERVER_AUTO"
+    //             },
+    //             scrollSlider: {
+    //                 ENABLED: "SCROLL_SLIDER_ENABLED",
+    //                 DISABLED: "SCROLL_SLIDER_DISABLED"
+    //             },
+    //             horizontalPhoneButton: {
+    //                 ENABLED: "HORIZONTAL_PHONE_ENABLED",
+    //                 DISABLED: "HORIZONTAL_PHONE_DISABLED"
+    //             },
+    //             intersectionVisibility: {
+    //                 FIX: "INTERSECTION_VISIBILITY_ENABLED"
+    //             },
+    //             hitFeatures: {
+    //                 ENABLED: "HIT_FEATURES_ENABLED"
+    //             }
+    //         }
+    // }
     , function(t, e, i) {
         "use strict";
         e.__esModule = !0;
@@ -684,34 +649,34 @@
             , l = i(16)
             , p = i(80)
             , c = i(359);
-        e.hostsMap = {
-            yandex: /(?:(tv|news)\.yandex(\.\w+)+)|(?:yandex(\.\w+)+\/pogoda)/i,
-            vk: /vk\.com/i,
-            ok: /ok\.ru/i,
-            avito: /(?:avito\.dev)|(?:avito\.ru)/i,
-            rambler: /(?:rambler\.ru)|(?:autorambler\.ru)/i,
-            mail: /(?:devmail\.ru)|(?:mail\.ru)/i,
-            lenta: /lenta\.ru/i,
-            gazeta: /gazeta\.ru/i,
-            gismeteo: /gismeteo\.ru/i,
-            rbc: /rbc(\.\w+)/i,
-            secretmag: /secretmag\.ru/i,
-            rg: /rg\.ru/i,
-            eda: /eda.ru/i,
-            nightparty: /nightparty\.ru/i,
-            afisha: /afisha\.ru/i,
-            motor: /motor\.ru/i,
-            moslenta: /moslenta\.ru/i,
-            championat: /championat\.com/i,
-            letidor: /letidor\.ru/i,
-            quto: /quto\.ru/i,
-            wmj: /wmj\.ru/i,
-            indicator: /indicator\.ru/i,
-            ferra: /ferra\.ru/i,
-            rns: /rns\.online/i,
-            passion: /passion\.ru/i,
-            livejournal: /livejournal\.com/i
-        },
+        // e.hostsMap = {
+        //     yandex: /(?:(tv|news)\.yandex(\.\w+)+)|(?:yandex(\.\w+)+\/pogoda)/i,
+        //     vk: /vk\.com/i,
+        //     ok: /ok\.ru/i,
+        //     avito: /(?:avito\.dev)|(?:avito\.ru)/i,
+        //     rambler: /(?:rambler\.ru)|(?:autorambler\.ru)/i,
+        //     mail: /(?:devmail\.ru)|(?:mail\.ru)/i,
+        //     lenta: /lenta\.ru/i,
+        //     gazeta: /gazeta\.ru/i,
+        //     gismeteo: /gismeteo\.ru/i,
+        //     rbc: /rbc(\.\w+)/i,
+        //     secretmag: /secretmag\.ru/i,
+        //     rg: /rg\.ru/i,
+        //     eda: /eda.ru/i,
+        //     nightparty: /nightparty\.ru/i,
+        //     afisha: /afisha\.ru/i,
+        //     motor: /motor\.ru/i,
+        //     moslenta: /moslenta\.ru/i,
+        //     championat: /championat\.com/i,
+        //     letidor: /letidor\.ru/i,
+        //     quto: /quto\.ru/i,
+        //     wmj: /wmj\.ru/i,
+        //     indicator: /indicator\.ru/i,
+        //     ferra: /ferra\.ru/i,
+        //     rns: /rns\.online/i,
+        //     passion: /passion\.ru/i,
+        //     livejournal: /livejournal\.com/i
+        // },
             e.pageIdList = [],
             e.blockIdList = [];
         var d, u, m = Object.keys(e.hostsMap);
