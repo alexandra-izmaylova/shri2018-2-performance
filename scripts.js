@@ -212,25 +212,25 @@
                     n[o] = e.call(i, t[o], o, t);
                 return n
             }
-    }
-    , function(t, e, i) {
-        "use strict";
-        var n = i(78)
-            , o = n.BorderTypes
-            , r = n.BlockTypes
-            , a = i(322)
-            , s = Boolean(a.Ya.relHostname)
-            , l = {
-            defaultReloadTimeout: 30,
-            MAX_ADS_LIMIT: 9,
-            REFRESH_VIEWPORT_VISIBLE_PART: .5,
-            MIN_AREA_BIG_BLOCK: 242500,
-            VISIBLE_PORTION_BIG_BLOCK: .3,
-            VISIBLE_PORTION_BLOCK_DIRECT: 0,
-            VISIBLE_PORTION_BLOCK: .5,
-            VISIBLE_PORTION_BLOCK_DIRECT_COMMON: .5,
-            IS_REL_HOSTNAME: s
-        }
+    // }
+    // , function(t, e, i) {
+    //     "use strict";
+    //     var n = i(78)
+    //         , o = n.BorderTypes
+    //         , r = n.BlockTypes
+    //         , a = i(322)
+    //         , s = Boolean(a.Ya.relHostname)
+    //         , l = {
+    //         defaultReloadTimeout: 30,
+    //         MAX_ADS_LIMIT: 9,
+    //         REFRESH_VIEWPORT_VISIBLE_PART: .5,
+    //         MIN_AREA_BIG_BLOCK: 242500,
+    //         VISIBLE_PORTION_BIG_BLOCK: .3,
+    //         VISIBLE_PORTION_BLOCK_DIRECT: 0,
+    //         VISIBLE_PORTION_BLOCK: .5,
+    //         VISIBLE_PORTION_BLOCK_DIRECT_COMMON: .5,
+    //         IS_REL_HOSTNAME: s
+    //     }
             , p = s ? "//an.webvisor.org" : "//an.yandex.ru";
         l.urls = {
             anHostname: p,
@@ -415,40 +415,41 @@
         ;
         e.__esModule = !0;
         var o, r, a = i(26), s = {};
-        !function(t) {
-            t["RTB"] = "R",
-                t["ComponentDirectSync"] = "DNS",
-                t["ComponentDirectAsync"] = "DNA",
-                t["OldDirect"] = "DO"
-        }(o = e.BlockRenderProducts || (e.BlockRenderProducts = {})),
-            function(t) {
-                t["AdvManagerInit"] = "010",
-                    t["RtbRender"] = "020",
-                    t["RtbQueueTime"] = "030",
-                    t["RtbLoadDone"] = "040",
-                    t["RtbDataParsed"] = "050",
-                    t["RtbManagerStart"] = "060",
-                    t["RtbManagerBeforeRenderRtb"] = "070",
-                    t["RtbManagerDataPreparedRtb"] = "080",
-                    t["RtbBlockRenderInit"] = "090",
-                    t["RtbBlockRenderStart"] = "100",
-                    t["RtbBlockCreateWrapper"] = "110",
-                    t["RtbBlockRenderAd"] = "120",
-                    t["RtbBlockAfterRender"] = "130",
-                    t["RtbManagerBlockRenderedRtb"] = "140",
-                    t["RtbManagerBeforeRenderDirect"] = "070",
-                    t["DirectManagerStart"] = "080",
-                    t["DirectManagerInitEnd"] = "090",
-                    t["DirectManagerChooseBlockType"] = "100",
-                    t["ComponentBlockInit"] = "110",
-                    t["ComponentBlockBeforeRender"] = "120",
-                    t["ComponentBlockReadyToRender"] = "130",
-                    t["ComponentBlockRenderComplete"] = "140",
-                    t["ComponentBlockMounted"] = "150",
-                    t["ComponentBlockDisplayed"] = "151",
-                    t["ComponentBlockReady"] = "153",
-                    t["DirectManagerBlockRendered"] = "160"
-            }(r = e.BlockRenderSteps || (e.BlockRenderSteps = {}));
+        // !function(t) {
+        //     t["RTB"] = "R",
+        //         t["ComponentDirectSync"] = "DNS",
+        //         t["ComponentDirectAsync"] = "DNA",
+        //         t["OldDirect"] = "DO"
+        // }
+        // (o = e.BlockRenderProducts || (e.BlockRenderProducts = {})),
+        //     function(t) {
+        //         t["AdvManagerInit"] = "010",
+        //             t["RtbRender"] = "020",
+        //             t["RtbQueueTime"] = "030",
+        //             t["RtbLoadDone"] = "040",
+        //             t["RtbDataParsed"] = "050",
+        //             t["RtbManagerStart"] = "060",
+        //             t["RtbManagerBeforeRenderRtb"] = "070",
+        //             t["RtbManagerDataPreparedRtb"] = "080",
+        //             t["RtbBlockRenderInit"] = "090",
+        //             t["RtbBlockRenderStart"] = "100",
+        //             t["RtbBlockCreateWrapper"] = "110",
+        //             t["RtbBlockRenderAd"] = "120",
+        //             t["RtbBlockAfterRender"] = "130",
+        //             t["RtbManagerBlockRenderedRtb"] = "140",
+        //             t["RtbManagerBeforeRenderDirect"] = "070",
+        //             t["DirectManagerStart"] = "080",
+        //             t["DirectManagerInitEnd"] = "090",
+        //             t["DirectManagerChooseBlockType"] = "100",
+        //             t["ComponentBlockInit"] = "110",
+        //             t["ComponentBlockBeforeRender"] = "120",
+        //             t["ComponentBlockReadyToRender"] = "130",
+        //             t["ComponentBlockRenderComplete"] = "140",
+        //             t["ComponentBlockMounted"] = "150",
+        //             t["ComponentBlockDisplayed"] = "151",
+        //             t["ComponentBlockReady"] = "153",
+        //             t["DirectManagerBlockRendered"] = "160"
+        //     }(r = e.BlockRenderSteps || (e.BlockRenderSteps = {}));
         var l, p, c, d = ((l = {})[r.AdvManagerInit] = 1,
             l[r.RtbRender] = 1,
             l[r.RtbQueueTime] = 1,
