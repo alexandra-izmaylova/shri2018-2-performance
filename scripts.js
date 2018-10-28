@@ -101,31 +101,31 @@
         });
         t.exports = a
     }
-    , function(t, e, i) {
-        "use strict";
-        var n = i(8)
-            , o = i(79);
-        function r() {}
-        function a(t) {
-            return r
-        }
-        o.log = n.logger.warn;
-        var s = {
-            log: a(),
-            warn: a(),
-            error: a(),
-            remoteLog: n.logger.info,
-            remoteLogString: n.logger.info,
-            isolate: function(t) {
-                return o("isolate", t || r, this, function(t) {
-                    t.preventProtect = !0
-                })
-            },
-            protect: o,
-            setProtectedTimeout: o.setTimeout
-        };
-        t.exports = s
-    }
+    // , function(t, e, i) {
+    //     "use strict";
+    //     var n = i(8)
+    //         , o = i(79);
+    //     function r() {}
+    //     function a(t) {
+    //         return r
+    //     }
+    //     o.log = n.logger.warn;
+    //     var s = {
+    //         log: a(),
+    //         warn: a(),
+    //         error: a(),
+    //         remoteLog: n.logger.info,
+    //         remoteLogString: n.logger.info,
+    //         isolate: function(t) {
+    //             return o("isolate", t || r, this, function(t) {
+    //                 t.preventProtect = !0
+    //             })
+    //         },
+    //         protect: o,
+    //         setProtectedTimeout: o.setTimeout
+    //     };
+    //     t.exports = s
+    // }
     , function(t, e, i) {
         "use strict";
         e.__esModule = !0;
@@ -184,8 +184,7 @@
                         i.style.length)
                     return e[n];
             return null
-        }
-            ,
+        },
             e.getBrowserName = function() {
                 return (e.isIE ? "msie" : e.isFirefox && "firefox") || e.isSafari && "safari" || e.isOpera && "opera" || e.isYaBrowser && "yabrowser" || e.isChrome && "chrome" || e.isUCBrowser && "ucbrowser" || "unknown"
             }
@@ -23497,6 +23496,93 @@
                     return Boolean(Number(this.getSettings().intersectionVisibility))
                 }
                 ,
+                this.getViewNotices = function() {
+                    var t = []
+                        , e = this.getSettings();
+                    return e.viewNotices && e.viewNotices.length && (t = t.concat(e.viewNotices)),
+                    "string" == typeof e.viewNotice && "" !== e.viewNotice && t.push(e.viewNotice),
+                        t = (0,
+                            r.map)(t, function(t) {
+                            return new o["default"]({
+                                host: t
+                            }).getUrl()
+                        }),
+                        (0,
+                            p.unique)(t)
+                }
+                ,
+                this.getWinNotice = function() {
+                    var t = this.getSettings().winNotice;
+                    return new o["default"]({
+                        host: t
+                    }).getUrl()
+                }
+                ,
+                this.getLanguage = function() {
+                    return t.common && t.common.pageLang || "1"
+                }
+                ,
+                this.isSSP = function() {
+                    var e = t.common && t.common.sspId;
+                    return null != e && 0 != e
+                }
+                ,
+            i.clickMacro && (0,
+                a.isString)(i.clickMacro) && !e.clickMacro && ((0,
+                n["default"])(window) || this.isSSP()) && (e.clickMacro = i.clickMacro),
+                this.getAbuseUrl = function() {
+                    return i.isInOverlay ? null : t.rtb.abuseLink
+                }
+                ,
+                this.getUniqueId = function() {
+                    return i.uniqueId
+                }
+                ,
+                this._visibilityTime = (0,
+                    c.calcVisibilityTime)(this.getSettings()),
+                this.getVisibilityTime = function() {
+                    return this._visibilityTime
+                }
+                ,
+                this.getBlockOpacity = function() {
+                    var e = t.visibilitySettings || {};
+                    return 1 === Number(e.expShow) ? 0 : 1
+                }
+        }
+    }
+    , function(t, e, i) {
+        "use strict";
+        var n = i(14)
+            , o = i(28)
+            , r = i(80)
+            , a = i(132)
+            , s = i(104)
+            , l = i(146)
+            , p = i(8)
+            , c = i(64)
+            , d = i(65)
+            , u = (i(588),
+            i(150))
+            , m = i(114)
+            , f = i(99)
+            , h = i(113)
+            , g = i(267)
+            , _ = i(160)
+            , y = (i(47),
+            i(2))
+            , b = i(3)
+            , v = i(6)
+            , x = i(147)
+            , w = i(24)
+            , k = i(102)
+            , C = i(151)
+            , I = i(0)
+            , S = i(589)
+            , A = i(61)
+            , O = v.MIN_AREA_BIG_BLOCK
+            , E = v.VISIBLE_PORTION_BLOCK
+            , T = v.VISIBLE_PORTION_BIG_BLOCK
+            , R = i(590).rtb;
         L.prototype = {
             render: function(t) {
                 (0,
