@@ -16,7 +16,7 @@
 	font-family: 'PT Sans Narrow';
 	src: url('ptn57f_w.eot');
 	src: local('PT Sans Narrow'), 
-	url('pt-sans-narrow-v9-latin_cyrillic-regular') format('woff2'),
+	url('pt-sans-narrow-v9-latin_cyrillic-regular.woff2') format('woff2'),
 	url('PTN57F_W.woff') format('woff');
 }
 
@@ -25,6 +25,6 @@
 	font-weight: bold;
 	src: url('ptn77f_w.eot');
 	src: local('PT Sans Narrow Bold'), 
-	url('pt-sans-narrow-v9-latin_cyrillic-700') format('woff2'),
+	url('pt-sans-narrow-v9-latin_cyrillic-700.woff2') format('woff2'),
 	url('PTN77F_W.woff') format('woff');
 }
