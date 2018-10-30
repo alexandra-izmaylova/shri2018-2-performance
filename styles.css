@@ -333,6 +333,7 @@
   background: url("assets/sh.jpg") center center/cover no-repeat;
 }
 .main__greeting {
+  font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-top: 6px;
   font-size: 27px;
   font-weight: 700;
