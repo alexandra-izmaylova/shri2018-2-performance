@@ -38,8 +38,8 @@ arrowLeftDevs.addEventListener('click', function () {
 
 let curValue;
 let curRotate;
-let maxRotate = 0.42; // 150 градусов
-let minRotate = -0.42; // -150 градусов
+let maxRotate = 0.42; 
+let minRotate = -0.42; 
 
 const MIN_VALUE = 26;
 const MAX_VALUE = 35;
@@ -49,10 +49,7 @@ const rotateToValue = function (rotate) {
     return Math.floor((Math.abs(rotate * 360 * 1.73 + INDICATOR_OFFSET) / 53) + MIN_VALUE);
 }
 
-
-/**
- * @param {Number} rotate Количество оборотов от нейтриального положения.
- */
+ 
 function setRotate(rotate) {
     if (rotate > maxRotate) {
         rotate = maxRotate;
