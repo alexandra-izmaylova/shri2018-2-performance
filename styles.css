@@ -238,11 +238,6 @@
   align-items: center;
   position: relative;
 }
-.knob svg {
-  width: 220px;
-  height: 220px;
-  transform: rotate(90deg);
-}
 .knob__indicator {
   fill: none;
   stroke: #f5a623;
